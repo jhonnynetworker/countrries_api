@@ -1,12 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+//import logo from './logo.svg';
+//import { Counter } from './features/counter/Counter';
 import './App.css';
+import Filter from './features/filter/filter.js'
+import SideBar from './features/sidebar/SideBar'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header">        
+        <SideBar/>
+        <Filter />
+        {/*<Counter />
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -49,7 +55,7 @@ function App() {
           >
             React Redux
           </a>
-        </span>
+  </span>*/}
       </header>
     </div>
   );
